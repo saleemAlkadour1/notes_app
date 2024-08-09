@@ -43,7 +43,7 @@ class NoteItem extends StatelessWidget {
               style:
                   TextStyle(color: Colors.black.withOpacity(0.5), fontSize: 16),
             ),
-          )
+          ),
         ],
       ),
     );
