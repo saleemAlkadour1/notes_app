@@ -10,14 +10,14 @@ class NotesViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+      padding: const EdgeInsets.only(left: 24, right: 24),
       child: Column(
         children: [
           SizedBox(
             height: 30,
           ),
           CustomAppBar(),
-          Expanded(child: NotesListView())
+          Expanded(child: NotesListView()),
         ],
       ),
     );
