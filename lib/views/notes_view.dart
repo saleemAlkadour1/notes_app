@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:notes_app/constants.dart';
 import 'package:notes_app/views/widgets/add_note_bottom_sheet.dart';
 import 'package:notes_app/views/widgets/notes_view_body.dart';
 
@@ -15,7 +16,9 @@ class NotesView extends StatelessWidget {
           onPressed: () {
             showModalBottomSheet(
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16)),
+                borderRadius: BorderRadius.circular(16),
+              ),
+              backgroundColor: Color(0XFF3C3C3C),
               context: context,
               builder: (context) {
                 return AddNoteButtomSheet();
@@ -27,7 +30,7 @@ class NotesView extends StatelessWidget {
             color: Colors.black,
           ),
           shape: CircleBorder(),
-          backgroundColor: Color(0XFF55F0DA),
+          backgroundColor: kPrimaryColor,
         ));
   }
 }
